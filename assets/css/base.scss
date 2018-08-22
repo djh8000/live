@@ -1,0 +1,429 @@
+@charset "utf-8";
+
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size: 100%;
+}
+
+/* 去除iPhone中默认的input样式 */
+input[type="submit"], input[type="reset"], input[type="button"], input {
+  resize: none;
+}
+
+// /* 取消链接高亮  */
+// body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+//   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+// }
+
+/* 设置HTML5元素为块 */
+article, aside, details, figcaption, figure, footer, hgroup, menu, nav, section {
+  display: block;
+}
+/* 初始化 */
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+body {
+  font: 12px 'Microsoft YaHei', Arial, sans-serif;
+  font-family:"PingFang SC", "Microsoft YaHei", 微软雅黑, "Helvetica Neue", Helvetica,  "Hiragino Sans GB", Arial, sans-serif;
+  color: #666;
+  background-color: #f8f8f8;
+  margin: 0 auto;
+}
+em, i {
+  font-style: normal;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+a {
+  text-decoration: none;
+  color:#666;
+}
+a:hover {
+  text-decoration: none;
+}
+ul, ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-family: Microsoft YaHei;
+  font-weight: normal;
+}
+img {
+  border: none;
+  margin: 0;
+  max-width:100%;
+  height: auto;
+    width: auto\9;
+    /* ie8 */
+    -ms-interpolation-mode: bicubic;
+}
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+div, img, ul, li, input{
+  box-sizing: border-box;
+}
+// 字体图标
+@font-face {
+  font-family: 'LIVEFONT';  /* project id 574535 */
+  src: url('//at.alicdn.com/t/font_574535_b7e9816wass.eot');
+  src: url('//at.alicdn.com/t/font_574535_b7e9816wass.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_574535_b7e9816wass.woff') format('woff'),
+  url('//at.alicdn.com/t/font_574535_b7e9816wass.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_574535_b7e9816wass.svg#LIVEFONT') format('svg');
+}
+.LIVEFONT{
+  font-family:"LIVEFONT" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;}
+  // 布局
+  .w{
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .l{
+    float: left;
+  }
+  .r{
+    float: right;
+  }
+  .m{
+    margin: 0 auto
+  }
+  .p-1{
+    padding: 10px;
+  }
+  .p-2{
+    padding: 20px;
+  }
+  .p-3{
+    padding: 30px;
+  }
+  .mb-1{
+    margin-bottom: 10px;
+  }
+  .mb-2{
+    margin-bottom: 20px;
+  }
+  .mb-3{
+    margin-bottom: 30px;
+  }
+  .mb-4{
+    margin-bottom: 40px;
+  }
+  .mt-1{
+    margin-top: 10px;
+  }
+  .mt-2{
+    margin-top: 20px;
+  }
+  .mt-3{
+    margin-top: 30px;
+  }
+  .mt-4{
+    margin-top: 40px;
+  }
+  .elis{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+  }
+  .flex{
+    display: flex;
+  }
+  .a-c{
+    align-items: center;
+  }
+  .j-c{
+    justify-content: center;
+  }
+  .j-s{
+    justify-content: space-between;
+  }
+  // 定位
+  .rel{
+    position: relative;
+  }
+  .abs{
+    position: absolute;
+  }
+  .fix{
+    position: fixed;
+  }
+  .bg{
+    background: #fff;
+  }
+// banner
+span.swiper-pagination-bullet{
+  width: 10px;
+  height: 10px;
+}
+ span.swiper-pagination-bullet-active{
+  width: 11px;
+  height: 11px;
+  background: #27d7b7;
+}
+.el-breadcrumb{
+  height:50px;
+  line-height: 50px !important;
+}
+.liveChat, .discuss-ul{
+  .el-tabs__item{
+    width:161px;
+    text-align: center;
+  }
+  .el-tabs__content{
+    padding:0 !important;
+  }
+  .speakInput{
+    .el-input__inner{
+      border-radius: 0px;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+  }
+  #scroll, #scroll2, .chat-list{
+    .content{
+      .text{
+        color:$font-color1;
+        text-align: justify;
+        word-wrap:break-word;
+        img{
+          display:inline-block;
+          height:24px;
+          vertical-align: bottom;
+        }
+      }
+    }
+    .liveStatus{
+      margin:5px 0;
+      p{
+        text-align: center;
+        background-color: #efefef;
+        border-radius:20px;
+        width: 90%;
+        margin:0 auto;
+        line-height: 24px;
+        a{
+          color:$master-color;
+        }
+        img{
+          width:24px;
+          height: auto;
+          vertical-align: top;
+        }
+      }
+    }
+  }
+}
+.discuss-box #scroll .liveStatus p{
+    width: 30%;
+}
+.question-main{
+  .el-dialog__header{
+    padding:10px 20px 15px;
+    .el-dialog__title{
+      display: block;
+      width:95%;
+      font-size: 14px;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .el-dialog__headerbtn{
+    top:6px;
+    right:6px;
+  }
+  .el-dialog__body{
+    padding:0 20px;
+  }
+  .questionList{
+    .user{
+      p{
+        img{
+          width:24px;
+          margin-bottom: -3px;
+        }
+      }
+    }
+  }
+}
+body{
+  background-color: #eee;
+}
+// 分页
+.list-content{
+  .page-burster{
+    padding: 30px 0 50px;
+  }
+  .el-pagination.is-background .btn-next, .el-pagination.is-background .btn-prev, .el-pagination.is-background .el-pager li{
+    border-radius: 50%;
+  }
+}
+// 直播页面样式修改
+.liveChat .el-tabs__item{
+  width: 100%;
+}
+.liveChat .el-tabs__nav{
+  display: flex;
+  float: none;
+}
+.liveChat .el-tabs--border-card>.el-tabs__header .el-tabs__item{
+  border-left-color: #dcdfe6;
+}
+.liveChat .el-tabs--border-card>.el-tabs__header .el-tabs__item.is-active{
+  border-right: none;
+}
+// 私播教室样式修改
+.liveClassroom {
+  .el-tabs--border-card>.el-tabs__header .el-tabs__item.is-active{
+    color: #f58119;
+  }
+  .el-tabs--border-card>.el-tabs__header .el-tabs__item:hover{
+    color: #f58119;
+  }
+  .el-button:focus, .el-button:hover{
+    border-color: #dcdfe6;
+  }
+  .el-input.is-active .el-input__inner, .el-input__inner:focus{
+    border-color: #f58119;
+  }
+  span.swiper-pagination-bullet-active{
+    width: 10px;
+    background: #f58119;
+  }
+}
+// 搜索
+.search-content .el-input__inner{
+  height: 31px;
+}
+.search-content i.el-input__icon{
+  cursor: pointer;
+}
+.out-search{
+  width: 400px;
+  height: 50px;
+  .el-input__inner{
+    height: 50px;
+    border-radius: 25px;
+  }
+  .el-input__suffix{
+    padding-top: 2px;
+    right: 3px;
+  }
+  .el-input__icon{
+    background: #ea6168;
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 22px;
+    border: 1px solid #ab151c;
+    cursor: pointer;
+  }
+}
+.out-search .el-autocomplete, .header .el-autocomplete{
+  display: block;
+}
+// 教师页面
+.teacher, .assistant{
+  .el-breadcrumb{
+    padding: 0 10px;
+  }
+  .el-tabs__item{
+    width: 140px;
+    padding: 0;
+    text-align: center;
+  }
+  .el-tabs__item.is-active{
+    color: $sliver-color;
+  }
+  .el-tabs__active-bar{
+    background-color: $sliver-color;
+    width: 140px !important;
+  }
+  .el-tabs__nav-wrap::after{
+    background: #e5e5e5;
+  }
+  .el-tabs__nav{
+    float: none;
+    width: 280px;
+    margin: 0 auto;
+  }
+  .el-tabs__item:hover{
+    color: $sliver-color;
+  }
+}
+.assistant{
+  .el-tabs__nav, .assistant .el-tabs__nav{
+    width: 270px;
+  }
+  .el-tabs__active-bar, .assistant .el-tabs__active-bar{
+    width: 135px;
+  }
+  .el-tabs__item{
+    width: 135px;
+    padding: 0;
+    text-align: center;
+  }
+  .el-input.is-active .el-input__inner, .el-input__inner:focus {
+    border-color: #f58119;
+  }
+}
+.dark-theme{
+  .el-breadcrumb__inner, .el-breadcrumb__inner a{
+    color: #fff !important;
+  }
+  .el-tabs__item{
+    color: #ccc;
+  }
+}
+.freshen{
+  .el-button--primary{
+    background: #84ccc9;
+    padding: 0;
+    color: #fff;
+    width: 76px;
+    line-height: 30px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+  .el-button--primary:focus, .el-button--primary:hover {
+    background: #7cd9d5;
+    border: none;
+    color: #fff;
+  }
+}
+.assistant{
+  .el-button--primary.is-disabled, .assistant .el-button--primary.is-disabled:active, .el-button--primary.is-disabled:focus, .el-button--primary.is-disabled:hover{
+    color: #fff;
+    background: rgb(161, 161, 161);
+    border-color:rgb(161, 161, 161);
+  }
+}
+.lesson-html img {
+  display: block;
+}
